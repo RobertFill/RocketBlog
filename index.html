@@ -8,6 +8,9 @@
     <title>RocketBlog</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icons8-notícias.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -15,38 +18,81 @@
         <header class="header">
             <nav class="menu">
                 <ul>
-                    <li><img src="./images/logo.svg" alt="logo-page" title="logo" id="logo"></li>
+                    <li>
+                        <img src="./images/logo.svg" alt="logo-page" title="logo" id="logo">
+                    </li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#category">Categoria</a></li>
                     <li><a href="#contact">Contato</a></li>
-                    <form action="">
+                    <form action="#">
                         <input type="search" name="search" placeholder="Buscar" id="search">
-                        <button type="submit" onclick="alert('search')">
+                        <button type="submit" onclick="alert('Feito')">
                             <img src="./images/search.svg" alt="icon search" id="icon-search">
                         </button>
                     </form>
                 </ul>
             </nav>
+            <nav class="menu-mobile"><!--mobile section-->
+                <div>
+                    <img src="./images/logo.svg" alt="logo-page" title="logo" id="logo-mobille">
+                </div>
+                <div>
+                    <img src="./images/bx-menu.svg" alt="menu-buttom" id="mobile-menu-btn">
+                    <img src="./images/bx-x.svg" alt="menu-buttom-close" id="close-menu">
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#category">Categoria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <form action="#">
+                        <input type="search" name="search" placeholder="Buscar" id="search-mobile">
+                        <button type="submit" onclick="alert('search')">
+                            <img src="./images/search.svg" alt="icon search" id="icon-search-mobile">
+                        </button>
+                    </form>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="text-title">
+                    <h2>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem quos quaerat
+                        atque minus dignissimos.</p>
+                    <div>
+                        <a href="#vajaMais" id="explore">
+                            Veja mais
+                            <img src="./images/arrow-right.svg" alt="icon_arrow" id="btn-arrow">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/featured-image.png" alt="image-feature" id="featured-image">
+                </div>
+            </div>
+        </header>
+        <section class="pages-top"><!--mobile content-->
             <div class="text-title">
                 <h2>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h2>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem quos quaerat
                     atque minus dignissimos.</p>
-
-                <a href="#vajaMais" id="explore">
-                    Veja mais
-                    <span>
+                <div>
+                    <a href="#vajaMais" id="explore">
+                        Veja mais
                         <img src="./images/arrow-right.svg" alt="icon_arrow" id="btn-arrow">
-                    </span>
-                </a>
+                    </a>
+                </div>
             </div>
-            <div><img src="./images/featured-image.png" alt="image-feature" id="featured-image"></div>
-        </header>
+            <div>
+                <img src="./images/featured-image.png" alt="image-feature" id="featured-image-mobile">
+            </div>
+        </section>
         <section class="pages">
             <div class="post-1">
                 <figure>
-                    <img src="./images/post-1.png" alt="">
+                    <img src="./images/post-1.png" alt="image" id="image-post">
                     <figcaption>Janeiro 04,2022</figcaption>
 
 
@@ -60,7 +106,7 @@
             </div>
             <br>
             <div class="post-2">
-                <figure>
+                <figure class="description-1">
                     <figcaption>Janeiro 04,2022</figcaption>
 
                     <h2>Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>
@@ -68,9 +114,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut
                         adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
                 </figure>
-            </div>
-            <div class="post-3">
-                <figure>
+                <figure class="description-2">
                     <figcaption>Janeiro 04,2022</figcaption>
                     <h2>Veja a evolução do Front-end na prática</h2>
                     <br>
@@ -84,7 +128,7 @@
         <section class="post-contents">
             <div class="box1">
                 <figure>
-                    <img src="./images/post-2.png" alt="">
+                    <img src="./images/post-2.png" alt="image1" id="image-1">
                     <figcaption>Janeiro 04,2022</figcaption>
 
                     <h2>10 dicas para conseguir a vaga desejada</h2>
@@ -92,11 +136,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut
                         adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
                 </figure>
-
             </div>
             <div class="box2">
                 <figure>
-                    <img src="./images/post-3.png" alt="">
+                    <img src="./images/post-3.png" alt="image2" id="image-2">
                     <figcaption>Janeiro 04,2022</figcaption>
 
                     <h2>Deixe seu código mais semântico com essas dicas</h2>
@@ -108,7 +151,7 @@
             </div>
             <div class="box3">
                 <figure>
-                    <img src="./images/post-4.png" alt="">
+                    <img src="./images/post-4.png" alt="image3" id="image-3">
                     <figcaption>Janeiro 04,2022</figcaption>
 
                     <h2>Use essas dicas nas suas aplicações mobile</h2>
@@ -120,7 +163,11 @@
             </div>
         </section>
     </div>
-
+    <footer>
+        <p>Feito por: Filipe Robert</p>
+        <p>Todos os direitos reservados por: Curo RocketSeat</p>
+    </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>
